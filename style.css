@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    background-color: RGB(34, 34, 34);
 }
 
 nav {
@@ -12,9 +13,8 @@ nav {
     padding: 0px 60px;
     display: flex;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
     border-bottom: 1px solid #44d62c
-    font-family: Helvetica Neue,Arial,Noto Sans,sans-serif;
 }
 
 #navbarlogo {
@@ -22,16 +22,26 @@ nav {
     padding: 15px 50px;
 }
 
+#navLinkWrapper {
+    display: flex;
+    align-items: center;
+}
+
+#navLinkWrapper a:hover {
+    color: white;
+}
+
 #navLinkWrapper a {
     color: grey;
     text-decoration: none;
-    /* margin: -4; */
+    font-family: "RazerF5";
     padding: 0px 35px;
     }
 
 #CartIcon {
-    width: 16px;
+    width: 20px;
     padding: 10px;
+    color: grey;
 }
 
 #PopUpBar {
@@ -40,9 +50,8 @@ nav {
     margin: 0px;
     display: flex;
     justify-content: center;
-    font-family: Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-weight: 400;
-    font-size: 1rem;
+    font-family: "RazerF5";
+    font-size: 15px;
 }
 
 #ShopNowLink {
@@ -50,8 +59,11 @@ text-decoration: none;
 color: white;
 }
 
+#shopNowLink:hover {
+    text-decoration: underline;
+}
+
 #RazerBladeImage {
-   width: 100%;
    height: 615px;
 }
 
@@ -59,44 +71,191 @@ color: white;
     position: relative;
     text-align: centre;
     color: white;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: "RazerF5";
+    background-image: url("./images/RazerBlade.jpg");
+    height: 615px;
+    background-position: center;
+    margin-bottom: 10px;
 }
 
 .container #top {
     position: absolute;
-    top: 10%;
+    top: 12%;
     left: 50%; 
     transform: translate(-50%, -50%);
-    font-weight: 300;
-    font-size: 2.25rem;
-  
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center
 }
 
 .container #middle {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: 300;
-    font-size: 1.75rem;
+    font-size: 27px;
 }
 
 .container #bottom1 {
     position: absolute;
-    top: 20%;
-    left: 45%;
+    top: 26%;
+    left: 43.5%;
     transform: translate(-50%, -50%);
     color: white;
     text-decoration: none;
-    font-weight: 300;
+    font-size: 19px;
 }
 
 .container #bottom2 {
     position: absolute;
-    top: 20%;
+    top: 26%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+#bottom1, #bottom2, #bottomB1, #bottomB2, #bottomC1, #bottomC2:hover {
+    text-decoration: underline;
+}
+
+#arrow {
+    color: #44d62c;
+}
+
+.container2 {
+    position: relative;
+    text-align: centre;
+    color: white;
+    font-family: "RazerF5";
+    background-image: url("./images/RazerHammerhead.jpg");
+    height: 615px;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.container2 #topB {
+    position: absolute;
+    top: 5%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.container2 #middleB {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+    
+}
+
+.container2 #bottomB1 {
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container2 #bottomB2 {
+    position: absolute;
+    top: 30%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container3 {
+    position: relative;
+    text-align: centre;
+    color: white;
+    font-family: "RazerF5";
+    background-image: url("./images/KiyoPro.jpg");
+    height: 615px;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.container3 #topC {
+    position: absolute;
+    top: 5%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.container3 #middleC {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+    
+}
+
+.container3 #bottomC1 {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.container3 #bottomC2 {
+    position: absolute;
+    top: 30%;
     left: 55%;
     transform: translate(-50%, -50%);
     color: white;
     text-decoration: none;
-    font-weight: 300;
+    font-size: 20px;
+}
+
+
+.ProductLink:hover {
+    text-decoration-line: underline;
+}
+
+#hamburgerMenu {
+    display: none;
+    margin: 0;
+}
+
+@media (max-width: 1200px;) {
+
+    #navLinkWrapper {
+        display: none;
+    }
+}
+
+@Media (max-width: 800px;) {
+    
+    #navLinkWrapper {
+        display: none;
+    }
+
+    #hamburgerMenu {
+        display: block;
+    }
 }
